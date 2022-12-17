@@ -1,1 +1,0 @@
-(()=>{"use strict";var t={ANON_ID_PARAMS:function(){try{return window.attnZUserId}catch(t){}}};window.__attentive_client_cfg=t})();
