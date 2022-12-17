@@ -1,0 +1,50 @@
+// Please pass the window and document and the specific KPI for the pixel that you want to fire (same name was the html file).
+// Parameters like item_id and sale_amount are optional and should only be called when needed e.g when tracking an order kpi.
+var fire_pixel = function(win, doc, kpi, item_id="", sale_amount="") {
+    function uuidv4() {
+        return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, function (c) {
+            return (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16);
+        });
+    }
+    function setCookie(name, value) {
+        var expiry = new Date(new Date().getTime() + 3600000 * 24 * 14);
+        doc.cookie = name + "=" + (value || "") + "; expires=" + expiry.toUTCString() + "; path=/";
+    }
+    function getCookie(name) {
+        var res = doc.cookie.split("; ").find(function (row) { return row.startsWith(name + "="); });
+        return res && res.length > 1 ? res.split("=").slice(1).join("=") : "";
+    }
+    function findParam(name) {
+        try {
+            var ind = win.location.href.search(name + "=");
+            if (ind > 0) {
+                var next = win.location.href.slice(ind).search("&");
+                if (next > 0) {
+                    return win.location.href.slice(ind, next + ind).split("=")[1];
+                } else {
+                    return win.location.href.slice(ind).split("=")[1];
+                }
+            } else {
+                return "";
+            } 
+        } catch (err) {
+            return "";
+        }
+    }
+    var ref = getCookie("tn-pixel-ref");
+    var uid = getCookie("tn-pixel-userId");
+    if (!ref) {
+        ref = doc.referrer ? doc.referrer : "Direct";
+        setCookie("tn-pixel-ref", ref);
+    }
+    if (!uid) {
+        uid = uuidv4();
+        setCookie("tn-pixel-userId", uid);
+    }
+    var c = doc.createElement("img");
+    c.id = "jm-pixel";
+    c.src =  "https://d1sm96mmyyttig.cloudfront.net/" + kpi + ".jpg" + "?user_id=" + uid + "&xref=" + ref + "&item_id=" + item_id + "&sale_amount=" + sale_amount+  "&xtm_source=" + findParam("utm_source") + "&xtm_medium=" + findParam("utm_medium") + "&xtm_campaign=" + findParam("utm_campaign") + "&xgclid=" + findParam("gclid") + "&xurl=" + win.location.href;
+    c.alt =  kpi + " Pixel";
+    doc.getElementsByTagName('head')[0].appendChild(c);
+}
+// homepage_view, page_view, basic_registration, job_post,  premium_registration
