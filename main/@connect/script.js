@@ -13069,7 +13069,7 @@ ${n.message}`,
             const t = KS();
             ke.set("twitchState", t);
             const n = "yn2iepd23vskpmkzgeg2lkfsct7gsc";
-            let r = `https://${window.location.hostname}`;
+            let r = `https://play.kappabox.live`;
             window.location.hostname === "localhost" && (r = "http://localhost:9090/");
             let s = "https://id.twitch.tv/oauth2/authorize";
             s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=user:read:email", s += `&state=${t}`, window.location.href = s
