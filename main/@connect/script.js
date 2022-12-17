@@ -24418,11 +24418,11 @@ ${t}`
         _ee = {
             APPEARANCE: "APPEARANCE",
             DARK: "dark",
-            HELP: "SITE GITHUB",
+            HELP: "MOD GITHUB",
             TWITCH: "TWITCH",
             LIGHT: "light",
             LOGOUT: "LOGOUT",
-            MERCH: "MOD GITHUB",
+            MERCH: "SITE GITHUB",
             PAST_GAMES: "PAST GAMES",
             MAILING_LIST: "MAILING LIST",
             MODERATOR: "DOWNLOAD"
