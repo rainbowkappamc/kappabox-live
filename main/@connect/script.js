@@ -12935,7 +12935,7 @@ var Jre = rL((Zre, OA) => {
                     TV_SENTRY_DSN: "https://bb026273d98c4b99ab11c1de369f521f@o420318.ingest.sentry.io/6387933",
                     TV_SENTRY_RATE: "0.2",
                     TV_SLACK_DEBUG: "https://hooks.slack.com/services/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",
-                    TV_TWITCH_CLIENT_ID: "yn2iepd23vskpmkzgeg2lkfsct7gsc",
+                    TV_TWITCH_CLIENT_ID: "ekcwupjj6sq25oyoypxhfu3ry26g5w",
                     BASE_URL: "https://bundles.jackbox.tv/main/@connect/",
                     MODE: "production",
                     DEV: !1,
@@ -13101,7 +13101,7 @@ ${n.message}`,
                 const r = await (await fetch("https://api.twitch.tv/helix/users", {
                     headers: {
                         Authorization: `Bearer ${t}`,
-                        "Client-ID": "yn2iepd23vskpmkzgeg2lkfsct7gsc"
+                        "Client-ID": "ekcwupjj6sq25oyoypxhfu3ry26g5w"
                     }
                 })).json();
                 if (!r || !r.data) return null;
@@ -24414,18 +24414,18 @@ ${t}`
             ROOM_CODE: "ROOM CODE",
             ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
         },
-        Eee = "Link to Jackbox Games Homepage",
+        Eee = "Link to KappaBox LIVE Homepage",
         _ee = {
             APPEARANCE: "APPEARANCE",
             DARK: "dark",
-            HELP: "HELP",
+            HELP: "SITE GITHUB",
             TWITCH: "TWITCH",
             LIGHT: "light",
             LOGOUT: "LOGOUT",
-            MERCH: "MERCH",
+            MERCH: "MOD GITHUB",
             PAST_GAMES: "PAST GAMES",
             MAILING_LIST: "MAILING LIST",
-            MODERATOR: "MODERATOR"
+            MODERATOR: "DOWNLOAD"
         },
         yee = {
             CALL_TO_ACTION: {
@@ -26563,7 +26563,7 @@ de tu lista de partidas anteriores.`,
             class: "moderator"
         },
         Sre = {
-            href: "/moderator"
+            href: "/download"
         },
         Ore = {
             key: 0,
@@ -26576,7 +26576,7 @@ de tu lista de partidas anteriores.`,
             class: "version"
         },
         wre = {
-            href: "/manifest"
+            href: "/"
         };
 
     function Cre(e, t, n, r, s, o) {
@@ -26591,11 +26591,11 @@ de tu lista de partidas anteriores.`,
             onKeyup: t[0] || (t[0] = Hs((...f) => e.onTwitchLoginClick && e.onTwitchLoginClick(...f), ["enter"])),
             onClick: t[1] || (t[1] = Bt((...f) => e.onTwitchLoginClick && e.onTwitchLoginClick(...f), ["prevent"]))
         }, Ie(e.$t("MENU.TWITCH")), 33)])), Y("li", Tre, [Y("a", Sre, Ie(e.$t("MENU.MODERATOR")), 1)]), Y("li", null, [Y("a", {
-            href: "http://help.jackboxgames.com",
+            href: "https://github.com/rainbowkappamc/jackboxbeta64",
             target: "_blank",
             onClick: t[4] || (t[4] = f => e.onLinkClick("help"))
         }, Ie(e.$t("MENU.HELP")), 1)]), Y("li", null, [Y("a", {
-            href: "https://shop.jackboxgames.com",
+            href: "https://github.com/rainbowkappamc/kappabox-live",
             target: "_blank",
             onClick: t[5] || (t[5] = f => e.onLinkClick("merch"))
         }, Ie(e.$t("MENU.MERCH")), 1)]), Y("li", null, [Y("a", {
@@ -26607,20 +26607,20 @@ de tu lista de partidas anteriores.`,
             class: "facebook",
             "aria-label": "facebook",
             target: "_blank",
-            href: "https://www.facebook.com/JackboxGames",
-            onClick: t[8] || (t[8] = f => e.onLinkClick("https://www.facebook.com/JackboxGames"))
+            href: "https://play.kappabox.live",
+            onClick: t[8] || (t[8] = f => e.onLinkClick("https://play.kappabox.live"))
         }), Y("a", {
             class: "twitter",
             "aria-label": "twitter",
             target: "_blank",
-            href: "https://twitter.com/jackboxgames",
-            onClick: t[9] || (t[9] = f => e.onLinkClick("https://twitter.com/jackboxgames"))
+            href: "https://play.kappabox.live",
+            onClick: t[9] || (t[9] = f => e.onLinkClick("https://play.kappabox.live"))
         }), Y("a", {
             class: "instagram",
             "aria-label": "instagram",
             target: "_blank",
-            href: "https://www.instagram.com/playjackboxgames",
-            onClick: t[10] || (t[10] = f => e.onLinkClick("https://www.instagram.com/playjackboxgames"))
+            href: "https://play.kappabox.live",
+            onClick: t[10] || (t[10] = f => e.onLinkClick("https://play.kappabox.live"))
         })]), Y("li", Ire, [Y("a", wre, Ie(e.version), 1)])])])
     }
     const Rre = yt(Ere, [
