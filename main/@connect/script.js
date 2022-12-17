@@ -13068,7 +13068,7 @@ ${n.message}`,
             if (!ke.isSupported) return;
             const t = KS();
             ke.set("twitchState", t);
-            const n = "yn2iepd23vskpmkzgeg2lkfsct7gsc";
+            const n = "ekcwupjj6sq25oyoypxhfu3ry26g5w";
             let r = `https://play.kappabox.live`;
             window.location.hostname === "localhost" && (r = "http://localhost:9090/");
             let s = "https://id.twitch.tv/oauth2/authorize";
