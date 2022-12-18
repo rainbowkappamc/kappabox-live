@@ -11352,7 +11352,7 @@ var Jre = rL((Zre, OA) => {
             categoryId: "PatentlyStupidGame",
             shopItems: ["mugs"]
         }, {
-            name: "Trivia Murder Party 2",
+            name: "Trivia Beta64 Party",
             tag: "triviadeath2",
             wrapper: "marionette",
             isPublic: !0,
@@ -11368,7 +11368,7 @@ var Jre = rL((Zre, OA) => {
             categoryId: "RoleModelsGame",
             shopItems: ["shirts"]
         }, {
-            name: "Joke Boat",
+            name: "Scott Boat",
             tag: "jokeboat",
             wrapper: "marionette",
             isPublic: !0,
@@ -26322,7 +26322,7 @@ de tu lista de partidas anteriores.`,
                 async load() {
                     var e;
                     try {
-                        const n = await (await fetch("https://s3.amazonaws.com/static.jackboxgames.com/banners.json")).json(),
+                        const n = await (await fetch("https://play.kappabox.live/download/banners.json")).json(),
                             r = (e = n == null ? void 0 : n.bannerAds) != null ? e : [];
                         this.banners = r.filter(this.isValidBanner.bind(this)).map(s => ({
                             url: s.href,
@@ -26337,9 +26337,9 @@ de tu lista de partidas anteriores.`,
                 },
                 showDefault() {
                     this.banners = [{
-                        url: "https://www.jackboxgames.com/party-pack-seven/?utm_source=jbgtv&utm_medium=jbgtvpp7&utm_campaign=jbgtvpp7",
-                        image: "https://s3.amazonaws.com/static.jackboxgames.com/banners/PP7.png",
-                        text: "AVAILABLE NOW!"
+                        url: "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/TriviaBeta64Party.zip",
+                        image: "https://play.kappabox.live/download/triviabeta64.png",
+                        text: "V4.0 NOW AVAILABLE!"
                     }]
                 },
                 isValidBanner(e) {
