@@ -81,7 +81,7 @@
         {
             "start": "2022-12-16",
             "text": "Connect Twitch -> KappaBox.Live!",
-            "src": "https://play.kappabox.live/download/discord.png",
+            "src": "https://play.kappabox.live/download/twitch.png",
             "href": "https://id.twitch.tv/oauth2/authorize?client_id=ekcwupjj6sq25oyoypxhfu3ry26g5w&redirect_uri=https://play.kappabox.live&response_type=token&scope=user:read:email&state=93da6cb5-e2d4-456c-85e9-9c865c738652"
         }
     ],
