@@ -24419,7 +24419,7 @@ ${t}`
             APPEARANCE: "APPEARANCE",
             DARK: "dark",
             HELP: "MOD GITHUB",
-            TWITCH: "TWITCH",
+            TWITCH: "DISCORD",
             LIGHT: "light",
             LOGOUT: "LOGOUT",
             MERCH: "SITE GITHUB",
