@@ -11352,7 +11352,7 @@ var Jre = rL((Zre, OA) => {
             categoryId: "PatentlyStupidGame",
             shopItems: ["mugs"]
         }, {
-            name: "Trivia Beta64 Party",
+            name: "Trivia Murder Party 2",
             tag: "triviadeath2",
             wrapper: "marionette",
             isPublic: !0,
@@ -11368,7 +11368,7 @@ var Jre = rL((Zre, OA) => {
             categoryId: "RoleModelsGame",
             shopItems: ["shirts"]
         }, {
-            name: "Scott Boat",
+            name: "Joke Boat",
             tag: "jokeboat",
             wrapper: "marionette",
             isPublic: !0,
@@ -12935,7 +12935,7 @@ var Jre = rL((Zre, OA) => {
                     TV_SENTRY_DSN: "https://bb026273d98c4b99ab11c1de369f521f@o420318.ingest.sentry.io/6387933",
                     TV_SENTRY_RATE: "0.2",
                     TV_SLACK_DEBUG: "https://hooks.slack.com/services/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",
-                    TV_TWITCH_CLIENT_ID: "ekcwupjj6sq25oyoypxhfu3ry26g5w",
+                    TV_TWITCH_CLIENT_ID: "yn2iepd23vskpmkzgeg2lkfsct7gsc",
                     BASE_URL: "https://bundles.jackbox.tv/main/@connect/",
                     MODE: "production",
                     DEV: !1,
@@ -13068,8 +13068,8 @@ ${n.message}`,
             if (!ke.isSupported) return;
             const t = KS();
             ke.set("twitchState", t);
-            const n = "ekcwupjj6sq25oyoypxhfu3ry26g5w";
-            let r = `https://play.kappabox.live`;
+            const n = "yn2iepd23vskpmkzgeg2lkfsct7gsc";
+            let r = `https://${window.location.hostname}`;
             window.location.hostname === "localhost" && (r = "http://localhost:9090/");
             let s = "https://id.twitch.tv/oauth2/authorize";
             s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=user:read:email", s += `&state=${t}`, window.location.href = s
@@ -13101,7 +13101,7 @@ ${n.message}`,
                 const r = await (await fetch("https://api.twitch.tv/helix/users", {
                     headers: {
                         Authorization: `Bearer ${t}`,
-                        "Client-ID": "ekcwupjj6sq25oyoypxhfu3ry26g5w"
+                        "Client-ID": "yn2iepd23vskpmkzgeg2lkfsct7gsc"
                     }
                 })).json();
                 if (!r || !r.data) return null;
@@ -24414,18 +24414,18 @@ ${t}`
             ROOM_CODE: "ROOM CODE",
             ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
         },
-        Eee = "Link to KappaBox LIVE Homepage",
+        Eee = "Link to Jackbox Games Homepage",
         _ee = {
             APPEARANCE: "APPEARANCE",
             DARK: "dark",
-            HELP: "MOD GITHUB",
+            HELP: "HELP",
             TWITCH: "TWITCH",
             LIGHT: "light",
             LOGOUT: "LOGOUT",
-            MERCH: "SITE GITHUB",
+            MERCH: "MERCH",
             PAST_GAMES: "PAST GAMES",
             MAILING_LIST: "MAILING LIST",
-            MODERATOR: "DOWNLOAD"
+            MODERATOR: "MODERATOR"
         },
         yee = {
             CALL_TO_ACTION: {
@@ -26322,7 +26322,7 @@ de tu lista de partidas anteriores.`,
                 async load() {
                     var e;
                     try {
-                        const n = await (await fetch("https://play.kappabox.live/download/banners.json")).json(),
+                        const n = await (await fetch("https://s3.amazonaws.com/static.jackboxgames.com/banners.json")).json(),
                             r = (e = n == null ? void 0 : n.bannerAds) != null ? e : [];
                         this.banners = r.filter(this.isValidBanner.bind(this)).map(s => ({
                             url: s.href,
@@ -26337,9 +26337,9 @@ de tu lista de partidas anteriores.`,
                 },
                 showDefault() {
                     this.banners = [{
-                        url: "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/TriviaBeta64Party.zip",
-                        image: "https://play.kappabox.live/download/triviabeta64.png",
-                        text: "V4.0 NOW AVAILABLE!"
+                        url: "https://www.jackboxgames.com/party-pack-seven/?utm_source=jbgtv&utm_medium=jbgtvpp7&utm_campaign=jbgtvpp7",
+                        image: "https://s3.amazonaws.com/static.jackboxgames.com/banners/PP7.png",
+                        text: "AVAILABLE NOW!"
                     }]
                 },
                 isValidBanner(e) {
@@ -26563,7 +26563,7 @@ de tu lista de partidas anteriores.`,
             class: "moderator"
         },
         Sre = {
-            href: "/download"
+            href: "/moderator"
         },
         Ore = {
             key: 0,
@@ -26576,7 +26576,7 @@ de tu lista de partidas anteriores.`,
             class: "version"
         },
         wre = {
-            href: "/"
+            href: "/manifest"
         };
 
     function Cre(e, t, n, r, s, o) {
@@ -26591,11 +26591,11 @@ de tu lista de partidas anteriores.`,
             onKeyup: t[0] || (t[0] = Hs((...f) => e.onTwitchLoginClick && e.onTwitchLoginClick(...f), ["enter"])),
             onClick: t[1] || (t[1] = Bt((...f) => e.onTwitchLoginClick && e.onTwitchLoginClick(...f), ["prevent"]))
         }, Ie(e.$t("MENU.TWITCH")), 33)])), Y("li", Tre, [Y("a", Sre, Ie(e.$t("MENU.MODERATOR")), 1)]), Y("li", null, [Y("a", {
-            href: "https://github.com/rainbowkappamc/jackboxbeta64",
+            href: "http://help.jackboxgames.com",
             target: "_blank",
             onClick: t[4] || (t[4] = f => e.onLinkClick("help"))
         }, Ie(e.$t("MENU.HELP")), 1)]), Y("li", null, [Y("a", {
-            href: "https://github.com/rainbowkappamc/kappabox-live",
+            href: "https://shop.jackboxgames.com",
             target: "_blank",
             onClick: t[5] || (t[5] = f => e.onLinkClick("merch"))
         }, Ie(e.$t("MENU.MERCH")), 1)]), Y("li", null, [Y("a", {
@@ -26607,20 +26607,20 @@ de tu lista de partidas anteriores.`,
             class: "facebook",
             "aria-label": "facebook",
             target: "_blank",
-            href: "https://play.kappabox.live",
-            onClick: t[8] || (t[8] = f => e.onLinkClick("https://play.kappabox.live"))
+            href: "https://www.facebook.com/JackboxGames",
+            onClick: t[8] || (t[8] = f => e.onLinkClick("https://www.facebook.com/JackboxGames"))
         }), Y("a", {
             class: "twitter",
             "aria-label": "twitter",
             target: "_blank",
-            href: "https://play.kappabox.live",
-            onClick: t[9] || (t[9] = f => e.onLinkClick("https://play.kappabox.live"))
+            href: "https://twitter.com/jackboxgames",
+            onClick: t[9] || (t[9] = f => e.onLinkClick("https://twitter.com/jackboxgames"))
         }), Y("a", {
             class: "instagram",
             "aria-label": "instagram",
             target: "_blank",
-            href: "https://play.kappabox.live",
-            onClick: t[10] || (t[10] = f => e.onLinkClick("https://play.kappabox.live"))
+            href: "https://www.instagram.com/playjackboxgames",
+            onClick: t[10] || (t[10] = f => e.onLinkClick("https://www.instagram.com/playjackboxgames"))
         })]), Y("li", Ire, [Y("a", wre, Ie(e.version), 1)])])])
     }
     const Rre = yt(Ere, [
