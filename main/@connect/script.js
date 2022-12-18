@@ -8511,7 +8511,7 @@ var Jre = rL((Zre, OA) => {
             if (fi(o, "maxStringLength") && (typeof o.maxStringLength == "number" ? o.maxStringLength < 0 && o.maxStringLength !== 1 / 0 : o.maxStringLength !== null)) throw new TypeError('option "maxStringLength", if provided, must be a positive integer, Infinity, or `null`');
             var c = fi(o, "customInspect") ? o.customInspect : !0;
             if (typeof c != "boolean" && c !== "symbol") throw new TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
-            if (fi(o, "indent") && o.indent !== null && o.indent !== "	" && !(parseInt(o.indent, 10) === o.indent && o.indent > 0)) throw new TypeError('option "indent" must be "\\t", an integer > 0, or `null`');
+            if (fi(o, "indent") && o.indent !== null && o.indent !== "  " && !(parseInt(o.indent, 10) === o.indent && o.indent > 0)) throw new TypeError('option "indent" must be "\\t", an integer > 0, or `null`');
             if (fi(o, "numericSeparator") && typeof o.numericSeparator != "boolean") throw new TypeError('option "numericSeparator", if provided, must be `true` or `false`');
             var u = o.numericSeparator;
             if (typeof t > "u") return "undefined";
@@ -8792,7 +8792,7 @@ var Jre = rL((Zre, OA) => {
 
     function xG(e, t) {
         var n;
-        if (e.indent === "	") n = "	";
+        if (e.indent === "  ") n = "    ";
         else if (typeof e.indent == "number" && e.indent > 0) n = Or.call(Array(e.indent + 1), " ");
         else return null;
         return {
@@ -9636,8 +9636,8 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `ObservedError{
-	to:${this.to}
-	error:${this.error}
+    to:${this.to}
+    error:${this.error}
 }`
         }
     }
@@ -9937,8 +9937,8 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `CountGroup{
-	choices: ${this.choices}
-	meta:${JSON.stringify(this.meta)}
+    choices: ${this.choices}
+    meta:${JSON.stringify(this.meta)}
 }`
         }
     }
@@ -9954,8 +9954,8 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `GCounter{
-	count:${this.count}
-	meta:${this.meta}
+    count:${this.count}
+    meta:${this.meta}
 }`
         }
     }
@@ -9979,9 +9979,9 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `ObjectEntity{
-	key:${this.key}
-	value: ${JSON.stringify(this.val)}
-	meta:${JSON.stringify(this.meta)}
+    key:${this.key}
+    value: ${JSON.stringify(this.val)}
+    meta:${JSON.stringify(this.meta)}
 }`
         }
         toBlob() {
@@ -10009,8 +10009,8 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `PNCounter{
-	count:${this.count}
-	meta:${JSON.stringify(this.meta)}
+    count:${this.count}
+    meta:${JSON.stringify(this.meta)}
 }`
         }
     }
@@ -10042,9 +10042,9 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `TextEntity{
-	key:${this.key}
-	text: ${this.text}
-	meta:${JSON.stringify(this.meta)}
+    key:${this.key}
+    text: ${this.text}
+    meta:${JSON.stringify(this.meta)}
 }`
         }
         toBlob() {
@@ -10073,8 +10073,8 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `TextRing{
-	elements: ${this.elements}
-	meta:${JSON.stringify(this.meta)}
+    elements: ${this.elements}
+    meta:${JSON.stringify(this.meta)}
 }`
         }
     }
@@ -10105,14 +10105,14 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `Doodle{
-	key:${this.key}
-	colors:${this.colors}
-	lines:${this.lines}
-	live:${this.live}
-	maxPoints:${this.maxPoints}
-	size:${this.size}
-	weights:${this.weights}
-	meta:${JSON.stringify(this.meta)}
+    key:${this.key}
+    colors:${this.colors}
+    lines:${this.lines}
+    live:${this.live}
+    maxPoints:${this.maxPoints}
+    size:${this.size}
+    weights:${this.weights}
+    meta:${JSON.stringify(this.meta)}
 }`
         }
     }
@@ -10125,7 +10125,7 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `DoodleLine{
-	val:${this.line}
+    val:${this.line}
 }`
         }
     }
@@ -10138,7 +10138,7 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `DoodleLineRemoved{
-	index:${this.index}
+    index:${this.index}
 }`
         }
     }
@@ -10156,11 +10156,11 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `Stack{
-	key:${this.key}
-	size:${this.size}
-	version:${this.version}
-	from:${this.from}
-	meta:${this.meta}
+    key:${this.key}
+    size:${this.size}
+    version:${this.version}
+    from:${this.from}
+    meta:${this.meta}
 }`
         }
     }
@@ -10170,8 +10170,8 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `StackElement{
-	key:${this.key}
-	value: ${JSON.stringify(this.val)}
+    key:${this.key}
+    value: ${JSON.stringify(this.val)}
 }`
         }
     }
@@ -10181,8 +10181,8 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `StackElements{
-	key:${this.key}
-	values: ${JSON.stringify(this.vals)}
+    key:${this.key}
+    values: ${JSON.stringify(this.vals)}
 }`
         }
     }
@@ -10200,7 +10200,7 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `DropEntity{
-	key:${this.key}
+    key:${this.key}
 }`
         }
     }
@@ -10228,7 +10228,7 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `LockEntity{
-	key:${this.key}
+    key:${this.key}
 }`
         }
     }
@@ -10253,10 +10253,10 @@ var Jre = rL((Zre, OA) => {
         }
         toString() {
             return `NumberEntity{
-	key:${this.key}
-	val: ${this.val}
-	restrictions: ${JSON.stringify(this.restrictions)}
-	meta: ${JSON.stringify(this.meta)}
+    key:${this.key}
+    val: ${this.val}
+    restrictions: ${JSON.stringify(this.restrictions)}
+    meta: ${JSON.stringify(this.meta)}
 }`
         }
     }
@@ -13072,7 +13072,7 @@ ${n.message}`,
             let r = `https://play.kappabox.live`;
             window.location.hostname === "localhost" && (r = "http://localhost:9090/");
             let s = "https://discordapp.com/oauth2/authorize";
-            s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=user:read:email", s += `&state=${t}`, window.location.href = s
+            s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=identity", s += `&state=${t}`, window.location.href = s
         }
         logout() {
             !ke.isSupported || (delete this.user, ke.remove("token"))
