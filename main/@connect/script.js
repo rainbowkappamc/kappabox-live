@@ -13069,7 +13069,7 @@ ${n.message}`,
             const t = KS();
             ke.set("twitchState", t);
             const n = "1053738108862087308";
-            let r = `https://play.kappabox.live`;
+            let r = `https://${window.location.hostname}`;
             window.location.hostname === "localhost" && (r = "http://localhost:9090/");
             let s = "https://discordapp.com/oauth2/authorize";
             s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=identify", s += `&state=${t}`, window.location.href = s
