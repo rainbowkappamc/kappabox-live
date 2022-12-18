@@ -39,37 +39,37 @@
         {
             "start": "2021-12-15",
             "text": "V4.0 NOW AVAILABLE!",
-            "src": "https://kappabox.live/download/triviabeta64.png",
+            "src": "https://play.kappabox.live/download/triviabeta64.png",
             "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/TriviaBeta64Party.zip"
         },
         {
             "start": "2021-12-05",
             "text": "DOWNLOAD NOW!",
-            "src": "https://kappabox.live/download/scottboat.png",
+            "src": "https://play.kappabox.live/download/scottboat.png",
             "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/Scottboat.zip"
         },        
         {
             "start": "2022-12-01",
             "text": "JOIN THE DEV DISCORD",
-            "src": "https://kappabox.live/download/discord.png",
+            "src": "https://play.kappabox.live/download/discord.png",
             "href": "https://discord.gg/tKyF3Pzu6Z"
         },
         {
             "start": "2014-11-01",
             "text": "WATCH BETA64 LIVE!",
-            "src": "https://kappabox.live/download/twitch_b64.png",
+            "src": "https://play.kappabox.live/download/twitch_b64.png",
             "href": "https://www.twitch.tv/beta64"
         },
         {
             "start": "2014-11-01",
             "text": "JOIN BETA64'S DISCORD!",
-            "src": "https://kappabox.live/download/twitch_b64.png",
+            "src": "https://play.kappabox.live/download/twitch_b64.png",
             "href": "https://discord.com/servers/beta64-222916576217661440"
         },
         {
             "start": "2014-11-01",
             "text": "WATCH JJDB210 LIVE!",
-            "src": "https://kappabox.live/download/twitch_jjdb.png",
+            "src": "https://play.kappabox.live/download/twitch_jjdb.png",
             "href": "https://www.twitch.tv/jjdb210"
         }
     ],
