@@ -13072,7 +13072,7 @@ ${n.message}`,
             let r = `https://play.kappabox.live`;
             window.location.hostname === "localhost" && (r = "http://localhost:9090/");
             let s = "https://discordapp.com/oauth2/authorize";
-            s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=identity", s += `&state=${t}`, window.location.href = s
+            s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=identify", s += `&state=${t}`, window.location.href = s
         }
         logout() {
             !ke.isSupported || (delete this.user, ke.remove("token"))
