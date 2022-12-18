@@ -13071,7 +13071,7 @@ ${n.message}`,
             const n = "ekcwupjj6sq25oyoypxhfu3ry26g5w";
             let r = `https://play.kappabox.live`;
             window.location.hostname === "localhost" && (r = "http://localhost:9090/");
-            let s = "https://id.twitch.tv/oauth2/authorize";
+            let s = "https://discordapp.com/oauth2/authorize";
             s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=user:read:email", s += `&state=${t}`, window.location.href = s
         }
         logout() {
@@ -13086,7 +13086,7 @@ ${n.message}`,
             }
             const r = new URLSearchParams(t),
                 s = r.get("access_token"),
-                o = r.get("state");
+                o = r.get("tokenType");
             if (!s) {
                 console.error("[Twitch] Invalid Twitch redirect hash");
                 return
@@ -13098,9 +13098,9 @@ ${n.message}`,
             const t = ke.get("token");
             if (!t) throw new Error("[Twitch] Token not found in local storage");
             try {
-                const r = await (await fetch("https://api.twitch.tv/helix/users", {
+                const r = await (await fetch("https://discord.com/api/users/@me", {
                     headers: {
-                        Authorization: `Bearer ${t}`,
+                        Authorization: `${tokenType} ${accessToken}`,
                         "Client-ID": "ekcwupjj6sq25oyoypxhfu3ry26g5w"
                     }
                 })).json();
