@@ -37,16 +37,16 @@
             "href": "https://www.jackboxgames.com/quiplash-two-interlashional-spanish/?utm_source=jackboxtv&utm_campaign=jbgtvquipint&utm_content=jbgtvquipint"
         },
         {
-            "start": "2021-11-17",
-            "text": "DOWNLOAD NOW!",
+            "start": "2021-12-15",
+            "text": "V4.0 NOW AVAILABLE!",
             "src": "https://kappabox.live/download/triviabeta64.png",
-            "href": "https://kappabox.live/download"
+            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/TriviaBeta64Party.zip"
         },
         {
             "start": "2021-12-05",
             "text": "DOWNLOAD NOW!",
             "src": "https://kappabox.live/download/scottboat.png",
-            "href": "https://kappabox.live/download"
+            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/Scottboat.zip"
         },        
         {
             "start": "2022-12-01",
