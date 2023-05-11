@@ -43,6 +43,12 @@
             "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/TriviaBeta64Party.zip"
         },
         {
+            "start": "2023-03-11",
+            "text": "V5.0-PREVIEW AVAILABLE!",
+            "src": "https://play.kappabox.live/download/triviabeta64-dev.png",
+            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/V5-devtest/TriviaBeta64Party-dev.zip"
+        },
+        {
             "start": "2021-12-05",
             "text": "DOWNLOAD NOW!",
             "src": "https://play.kappabox.live/download/scottboat.png",
