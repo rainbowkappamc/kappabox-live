@@ -37,28 +37,22 @@
             "href": "https://www.jackboxgames.com/quiplash-two-interlashional-spanish/?utm_source=jackboxtv&utm_campaign=jbgtvquipint&utm_content=jbgtvquipint"
         },
         {
-            "start": "2021-12-15",
-            "text": "V4.0 NOW AVAILABLE!",
+            "start": "2021-07-01",
+            "text": "V5.0 AVAILABLE SOON!",
             "src": "https://play.kappabox.live/download/triviabeta64.png",
-            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/TriviaBeta64Party.zip"
-        },
-        {
-            "start": "2023-03-11",
-            "text": "V5.0-PREVIEW AVAILABLE!",
-            "src": "https://play.kappabox.live/download/triviabeta64-dev.png",
             "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/V5-devtest/TriviaBeta64Party-dev.zip"
         },
         {
-            "start": "2021-12-05",
-            "text": "DOWNLOAD NOW!",
+            "start": "2023-07-01",
+            "text": "V2.0 AVAILABLE SOON!",
             "src": "https://play.kappabox.live/download/scottboat.png",
-            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/Scottboat.zip"
+            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/V5-devtest2/ScottBoat-dev.zip"
         },        
         {
             "start": "2022-12-01",
-            "text": "JOIN THE DEV DISCORD",
+            "text": "JOIN THE DISCORD!",
             "src": "https://play.kappabox.live/download/discord.png",
-            "href": "https://discord.gg/tKyF3Pzu6Z"
+            "href": "https://discord.gg/c72H3Yv4nb"
         },
         {
             "start": "2014-11-01",
@@ -79,10 +73,10 @@
             "href": "https://www.twitch.tv/jjdb210"
         },
         {
-            "start": "2022-12-16",
-            "text": "Connect to Discord!",
-            "src": "https://play.kappabox.live/download/discord.png",
-            "href": "https://discord.com/api/oauth2/authorize?client_id=1053738108862087308&redirect_uri=https%3A%2F%2Fplay.kappabox.live&response_type=code&scope=identify"
+            "start": "2023-07-18",
+            "text": "Get The Mod Soundtrack!",
+            "src": "https://play.kappabox.live/download/soundtrack.png",
+            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/V5-devtest2/Beta64JackboxMod_soundtrack-dev.zip"
         },
         {
             "start": "2022-12-16",
