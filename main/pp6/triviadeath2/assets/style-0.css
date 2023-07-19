@@ -23124,19 +23124,19 @@ li>a.button-color.active[data-color="#000000"] {
 
 @font-face {
     font-family: nokian11regular;
-    src: url(Splatoon.woff2) format("woff2"), url(Splatoon.woff) format("woff");
+    src: url(f0c06749.woff2) format("woff2"), url(b8a8ae34.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Lost and Forelorn;
-    src: url(WickFont.woff) format("woff")
+    src: url(34416ca6.woff) format("woff")
 }
 
 @font-face {
     font-family: Coldstyle;
-    src: url(AOTFShinGoProMedium.woff) format("woff")
+    src: url(3ef0aaa7.woff) format("woff")
 }
 
 .triviadeath2 textarea,
