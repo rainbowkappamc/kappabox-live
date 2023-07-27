@@ -40,13 +40,13 @@
             "start": "2021-07-01",
             "text": "V5.0 AVAILABLE NOW!",
             "src": "https://play.kappabox.live/download/triviabeta64.png",
-            "href": "https://play.kappabox.live/download/releases/mods/Beta64/Trivia%20Beta%20Party/latest/TriviaBetaParty.zip"
+            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/V5-release/TriviaBetaParty.zip"
         },
         {
             "start": "2023-07-01",
             "text": "V2.0 AVAILABLE NOW!",
             "src": "https://play.kappabox.live/download/scottboat.png",
-            "href": "https://play.kappabox.live/download/releases/mods/Beta64/Scott%20Boat/latest/ScottBoat-v2.zip"
+            "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/V5-release/ScottBoat-v2.zip"
         },        
         {
             "start": "2022-12-01",
