@@ -1,8 +1,15 @@
 {
     "bannerAds": [
         {
+            "start": "2024-05-21",
+            "text": "Check Out Other Projects!",
+            "src": "https://play.kappabox.live/download/portfolio.png",
+            "href": "http://kappabox.live/"
+        },
+        {
+
             "start": "2024-01-01",
-            "text": "Trivia Beta Party V5 Released",
+            "text": "Trivia Beta Party Released",
             "src": "https://play.kappabox.live/download/triviabeta64.png",
             "href": "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/V5-release/TriviaBetaParty.zip"
         },
