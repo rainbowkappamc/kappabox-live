@@ -11268,7 +11268,7 @@ var Jre = rL((Zre, OA) => {
             directory: "pp3/quiplash2",
             categoryId: "Quiplash2Game"
         }, {
-            name: "Trivia Murder Party",
+            name: "Trivia Beta64 Party Prequel Prototype",
             tag: "triviadeath",
             wrapper: "marionette",
             isPublic: !0,
@@ -11287,7 +11287,7 @@ var Jre = rL((Zre, OA) => {
             isPublic: !0,
             directory: "pp4/fibbage3"
         }, {
-            name: "Survive the Internet",
+            name: "Survive Beta64 Live Prototype",
             tag: "survivetheinternet",
             wrapper: "marionette",
             isPublic: !0,
@@ -11389,7 +11389,7 @@ var Jre = rL((Zre, OA) => {
             directory: "pp6/pushthebutton",
             categoryId: "PushTheButtonGame"
         }, {
-            name: "Talking Points",
+            name: "Bandy Points",
             tag: "jackbox-talks",
             wrapper: "marionette",
             isPublic: !0,
@@ -11499,7 +11499,7 @@ var Jre = rL((Zre, OA) => {
             features: ["moderation", "kicking"],
             categoryId: "Fibbage4Game"
         }, {
-            name: "Roomerang",
+            name: "BoyKisserang",
             tag: "htmf",
             wrapper: "vue",
             isPublic: !0,
