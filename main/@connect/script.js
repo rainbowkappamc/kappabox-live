@@ -24425,7 +24425,7 @@ ${t}`
             MERCH: "SITE GITHUB",
             PAST_GAMES: "PAST GAMES",
             MAILING_LIST: "MAILING LIST",
-            MODERATOR: "DOWNLOAD"
+            MODERATOR: "PORTFOLIO"
         },
         yee = {
             CALL_TO_ACTION: {
