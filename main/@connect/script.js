@@ -26337,9 +26337,9 @@ de tu lista de partidas anteriores.`,
                 },
                 showDefault() {
                     this.banners = [{
-                        url: "https://github.com/rainbowkappamc/jackboxbeta64/releases/download/4.0/TriviaBeta64Party.zip",
+                        url: "http://triviabetaparty.kappabox.live/",
                         image: "https://play.kappabox.live/download/triviabeta64.png",
-                        text: "V4.0 NOW AVAILABLE!"
+                        text: "Trivia Beta Party Released"
                     }]
                 },
                 isValidBanner(e) {
@@ -26884,7 +26884,7 @@ de tu lista de partidas anteriores.`,
             key: 0,
             class: "bottom-logo",
             target: "_blank",
-            href: "https://www.jackboxgames.com/?utm_source=jackboxtv&utm_medium=logo&utm_campaign=jackboxgames"
+            href: "http://play.kappabox.live/"
         };
 
     function zre(e, t, n, r, s, o) {
