@@ -4670,7 +4670,7 @@ var ow = Qo((uw, Fo) => {
             directory: "pp3/quiplash2",
             categoryId: "Quiplash2Game"
         }, {
-            name: "Trivia Murder Party",
+            name: "Trivia Beta64 Party Prequel Prototype",
             tag: "triviadeath",
             wrapper: "marionette",
             isPublic: !0,
@@ -4689,7 +4689,7 @@ var ow = Qo((uw, Fo) => {
             isPublic: !0,
             directory: "pp4/fibbage3"
         }, {
-            name: "Survive the Internet",
+            name: "Survive Beta64 Live Prototype",
             tag: "survivetheinternet",
             wrapper: "marionette",
             isPublic: !0,
@@ -4754,7 +4754,7 @@ var ow = Qo((uw, Fo) => {
             categoryId: "PatentlyStupidGame",
             shopItems: ["mugs"]
         }, {
-            name: "Trivia Murder Party 2",
+            name: "Trivia Beta64 Party",
             tag: "triviadeath2",
             wrapper: "marionette",
             isPublic: !0,
@@ -4770,7 +4770,7 @@ var ow = Qo((uw, Fo) => {
             categoryId: "RoleModelsGame",
             shopItems: ["shirts"]
         }, {
-            name: "Joke Boat",
+            name: "Scott Boat",
             tag: "jokeboat",
             wrapper: "marionette",
             isPublic: !0,
@@ -4791,7 +4791,7 @@ var ow = Qo((uw, Fo) => {
             directory: "pp6/pushthebutton",
             categoryId: "PushTheButtonGame"
         }, {
-            name: "Talking Points",
+            name: "Bandy Points",
             tag: "jackbox-talks",
             wrapper: "marionette",
             isPublic: !0,
@@ -4901,7 +4901,7 @@ var ow = Qo((uw, Fo) => {
             features: ["moderation", "kicking"],
             categoryId: "Fibbage4Game"
         }, {
-            name: "Roomerang",
+            name: "BoyKisserang",
             tag: "htmf",
             wrapper: "vue",
             isPublic: !0,
