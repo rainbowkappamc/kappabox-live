@@ -1,0 +1,1 @@
+@Moderator does not work in this fork, to restore functionality - replace with source @connect/script.js (Moderation redirects to /download/index.html to the main KappaBox Site) , alternatively going to https://kappabox.camelskin.zip/moderation should in theory force this to work too, though it is UNTESTED.
