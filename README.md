@@ -1,3 +1,5 @@
+A Jackbox.tv Dump Designed For Trivia Beta64 Party, Scott Boat, and any other Jackbox Mods that modified the web-end elements of Jackbox Games.
+---
 FORKED FOR USE WITH RAINBOWKAPPA'S JACKBOX MODS 
 Currently Used For :
 Trivia Beta64 Party
