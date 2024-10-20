@@ -13065,33 +13065,33 @@ ${n.message}`,
             return !ke.isSupported || !ke.get("token") ? null : this.fetchUser()
         }
         login() {
-            if (!ke.isSupported) return;
-            const t = KS();
-            ke.set("twitchState", t);
-            const n = "ekcwupjj6sq25oyoypxhfu3ry26g5w";
-            let r = `https://kappabox.camelskin.zip`;
-            window.location.hostname === "localhost" && (r = "http://localhost:9090/");
-            let s = "https://id.twitch.tv/oauth2/authorize";
-            s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=token", s += "&scope=user:read:email", s += `&state=${t}`, window.location.href = s
+            if (!qe.isSupported) return;
+            const e = hj();
+            qe.set("twitchState", e);
+            const r = "sf9nokc985gccee2xnog0p7pxnmdch";
+            let n = `https://${window.location.hostname}`;
+            window.location.hostname === "localhost" && (n = "http://localhost:9090/");
+            let i = "https://id.twitch.tv/oauth2/authorize";
+            i += `?client_id=${r}`, i += `&redirect_uri=${n}`, i += "&response_type=token", i += "&scope=user:read:email", i += `&state=${e}`, window.location.href = i
         }
         logout() {
-            !ke.isSupported || (delete this.user, ke.remove("token"))
+            qe.isSupported && (delete this.user, qe.remove("token"))
         }
-        processParams(t) {
-            if (!t || !ke.isSupported) return;
-            const n = ke.get("twitchState");
-            if (!n) {
+        processParams(e) {
+            if (!e || !qe.isSupported) return;
+            const r = qe.get("twitchState");
+            if (!r) {
                 console.error("[Twitch] Could not find the expected state in local storage");
                 return
             }
-            const r = new URLSearchParams(t),
-                s = r.get("access_token"),
-                o = r.get("state");
-            if (!s) {
+            const n = new URLSearchParams(e),
+                i = n.get("access_token"),
+                s = n.get("state");
+            if (!i) {
                 console.error("[Twitch] Invalid Twitch redirect hash");
                 return
             }
-            o !== n && console.error("[Twitch] State parameter doesn't match the expected state"), ke.set("token", s), ke.remove("twitchState"), window.history.replaceState({}, document.title, "/")
+            s !== r && console.error("[Twitch] State parameter doesn't match the expected state"), qe.set("token", i), qe.remove("twitchState"), window.history.replaceState({}, document.title, "/")
         }
         async fetchUser() {
             if (!ke.isSupported) return null;
@@ -13101,7 +13101,7 @@ ${n.message}`,
                 const r = await (await fetch("https://api.twitch.tv/helix/users", {
                     headers: {
                         Authorization: `Bearer ${t}`,
-                        "Client-ID": "ekcwupjj6sq25oyoypxhfu3ry26g5w"
+                        "Client-ID": "sf9nokc985gccee2xnog0p7pxnmdch"
                     }
                 })).json();
                 if (!r || !r.data) return null;
