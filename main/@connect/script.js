@@ -26589,10 +26589,6 @@ de tu lista de partidas anteriores.`,
         }, [Y("a", bre, Ie(e.$t("MENU.LOGOUT")), 1)], 32)) : (z(), Q("li", yre, [Y("a", {
             onKeyup: t[0] || (t[0] = Hs((...f) => e.onTwitchLoginClick && e.onTwitchLoginClick(...f), ["enter"])),
             onClick: t[1] || (t[1] = Bt((...f) => e.onTwitchLoginClick && e.onTwitchLoginClick(...f), ["prevent"]))
-        }, Ie(e.$t("MENU.TWITCH")), 33)])), Y("li", Tre, [Y("a", Sre, Ie(e.$t("MENU.MODERATOR")), 1)]), Y("li", null, [Y("a", {
-            href: "https://github.com/rainbowkappamc/jackboxbeta64",
-            target: "_blank",
-            onClick: t[4] || (t[4] = f => e.onLinkClick("help"))
         }, Ie(e.$t("MENU.HELP")), 1)]), Y("li", null, [Y("a", {
             href: "https://github.com/rainbowkappamc/kappabox-live",
             target: "_blank",
@@ -26602,24 +26598,6 @@ de tu lista de partidas anteriores.`,
             onClick: t[7] || (t[7] = Bt((...f) => e.onPastGamesClick && e.onPastGamesClick(...f), ["prevent"]))
         }, [Bn(Ie(e.$t("MENU.PAST_GAMES")) + " ", 1), e.hasUnseenGames ? (z(), Q("div", Ore)) : we("", !0)], 32)]), ft(c), e.shouldShowPreferredBranch ? (z(), nr(u, {
             key: 2
-        })) : we("", !0), Y("li", Are, [Y("a", {
-            class: "facebook",
-            "aria-label": "facebook",
-            target: "_blank",
-            href: "https://play.kappabox.live",
-            onClick: t[8] || (t[8] = f => e.onLinkClick("https://play.kappabox.live"))
-        }), Y("a", {
-            class: "twitter",
-            "aria-label": "twitter",
-            target: "_blank",
-            href: "https://play.kappabox.live",
-            onClick: t[9] || (t[9] = f => e.onLinkClick("https://play.kappabox.live"))
-        }), Y("a", {
-            class: "instagram",
-            "aria-label": "instagram",
-            target: "_blank",
-            href: "https://play.kappabox.live",
-            onClick: t[10] || (t[10] = f => e.onLinkClick("https://play.kappabox.live"))
         })]), Y("li", Ire, [Y("a", wre, Ie(e.version), 1)])])])
     }
     const Rre = yt(Ere, [
