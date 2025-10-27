@@ -13065,33 +13065,33 @@ ${n.message}`,
             return !ke.isSupported || !ke.get("token") ? null : this.fetchUser()
         }
         login() {
-            if (!qe.isSupported) return;
-            const e = hj();
-            qe.set("twitchState", e);
-            const r = "sf9nokc985gccee2xnog0p7pxnmdch";
-            let n = `https://${window.location.hostname}`;
-            window.location.hostname === "localhost" && (n = "http://localhost:9090/");
-            let i = "https://id.twitch.tv/oauth2/authorize";
-            i += `?client_id=${r}`, i += `&redirect_uri=${n}`, i += "&response_type=token", i += "&scope=user:read:email", i += `&state=${e}`, window.location.href = i
+            if (!ke.isSupported) return;
+            const t = KS();
+            ke.set("twitchState", t);
+            const n = "ekcwupjj6sq25oyoypxhfu3ry26g5w";
+            let r = `https://play.triviabeta64party.net`;
+            window.location.hostname === "localhost" && (r = "http://localhost:9090/");
+            let s = "https://id.twitch.tv/oauth2/authorize";
+            s += `?client_id=${n}`, s += `&redirect_uri=${r}`, s += "&response_type=", s += "&scope=user:read:email", s += `&state=${t}`, window.location.href = s
         }
         logout() {
-            qe.isSupported && (delete this.user, qe.remove("token"))
+            !ke.isSupported || (delete this.user, ke.remove(""))
         }
-        processParams(e) {
-            if (!e || !qe.isSupported) return;
-            const r = qe.get("twitchState");
-            if (!r) {
+        processParams(t) {
+            if (!t || !ke.isSupported) return;
+            const n = ke.get("twitchState");
+            if (!n) {
                 console.error("[Twitch] Could not find the expected state in local storage");
                 return
             }
-            const n = new URLSearchParams(e),
-                i = n.get("access_token"),
-                s = n.get("state");
-            if (!i) {
+            const r = new URLSearchParams(t),
+                s = r.get("access_"),
+                o = r.get("state");
+            if (!s) {
                 console.error("[Twitch] Invalid Twitch redirect hash");
                 return
             }
-            s !== r && console.error("[Twitch] State parameter doesn't match the expected state"), qe.set("token", i), qe.remove("twitchState"), window.history.replaceState({}, document.title, "/")
+            o !== n && console.error("[Twitch] State parameter doesn't match the expected state"), ke.set("token", s), ke.remove("twitchState"), window.history.replaceState({}, document.title, "/")
         }
         async fetchUser() {
             if (!ke.isSupported) return null;
@@ -13101,7 +13101,7 @@ ${n.message}`,
                 const r = await (await fetch("https://api.twitch.tv/helix/users", {
                     headers: {
                         Authorization: `Bearer ${t}`,
-                        "Client-ID": "sf9nokc985gccee2xnog0p7pxnmdch"
+                        "Client-ID": "ekcwupjj6sq25oyoypxhfu3ry26g5w"
                     }
                 })).json();
                 if (!r || !r.data) return null;
@@ -24419,6 +24419,7 @@ ${t}`
             APPEARANCE: "APPEARANCE",
             DARK: "dark",
             HELP: "MOD GITHUB",
+            TWITCH: "TWITCH",
             LIGHT: "light",
             LOGOUT: "LOGOUT",
             MERCH: "SITE GITHUB",
@@ -26321,7 +26322,7 @@ de tu lista de partidas anteriores.`,
                 async load() {
                     var e;
                     try {
-                        const n = await (await fetch("https://play.triviabeta64party.net/download//banners.json")).json(),
+                        const n = await (await fetch("https://play.triviabeta64party.net/download/banners.json")).json(),
                             r = (e = n == null ? void 0 : n.bannerAds) != null ? e : [];
                         this.banners = r.filter(this.isValidBanner.bind(this)).map(s => ({
                             url: s.href,
@@ -26589,6 +26590,10 @@ de tu lista de partidas anteriores.`,
         }, [Y("a", bre, Ie(e.$t("MENU.LOGOUT")), 1)], 32)) : (z(), Q("li", yre, [Y("a", {
             onKeyup: t[0] || (t[0] = Hs((...f) => e.onTwitchLoginClick && e.onTwitchLoginClick(...f), ["enter"])),
             onClick: t[1] || (t[1] = Bt((...f) => e.onTwitchLoginClick && e.onTwitchLoginClick(...f), ["prevent"]))
+        }, Ie(e.$t("MENU.TWITCH")), 33)])), Y("li", Tre, [Y("a", Sre, Ie(e.$t("MENU.MODERATOR")), 1)]), Y("li", null, [Y("a", {
+            href: "https://github.com/rainbowkappamc/jackboxbeta64",
+            target: "_blank",
+            onClick: t[4] || (t[4] = f => e.onLinkClick("help"))
         }, Ie(e.$t("MENU.HELP")), 1)]), Y("li", null, [Y("a", {
             href: "https://github.com/rainbowkappamc/kappabox-live",
             target: "_blank",
@@ -26598,6 +26603,24 @@ de tu lista de partidas anteriores.`,
             onClick: t[7] || (t[7] = Bt((...f) => e.onPastGamesClick && e.onPastGamesClick(...f), ["prevent"]))
         }, [Bn(Ie(e.$t("MENU.PAST_GAMES")) + " ", 1), e.hasUnseenGames ? (z(), Q("div", Ore)) : we("", !0)], 32)]), ft(c), e.shouldShowPreferredBranch ? (z(), nr(u, {
             key: 2
+        })) : we("", !0), Y("li", Are, [Y("a", {
+            class: "facebook",
+            "aria-label": "facebook",
+            target: "_blank",
+            href: "https://play.kappabox.live",
+            onClick: t[8] || (t[8] = f => e.onLinkClick("https://play.kappabox.live"))
+        }), Y("a", {
+            class: "twitter",
+            "aria-label": "twitter",
+            target: "_blank",
+            href: "https://play.kappabox.live",
+            onClick: t[9] || (t[9] = f => e.onLinkClick("https://play.kappabox.live"))
+        }), Y("a", {
+            class: "instagram",
+            "aria-label": "instagram",
+            target: "_blank",
+            href: "https://play.kappabox.live",
+            onClick: t[10] || (t[10] = f => e.onLinkClick("https://play.kappabox.live"))
         })]), Y("li", Ire, [Y("a", wre, Ie(e.version), 1)])])])
     }
     const Rre = yt(Ere, [
@@ -26924,5 +26947,4 @@ de tu lista de partidas anteriores.`,
     })
 });
 export default Jre();
-
 //# sourceMappingURL=1c73f929.js.map
