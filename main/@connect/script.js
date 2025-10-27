@@ -24419,7 +24419,6 @@ ${t}`
             APPEARANCE: "APPEARANCE",
             DARK: "dark",
             HELP: "MOD GITHUB",
-            TWITCH: "TWITCH",
             LIGHT: "light",
             LOGOUT: "LOGOUT",
             MERCH: "SITE GITHUB",
@@ -26947,4 +26946,5 @@ de tu lista de partidas anteriores.`,
     })
 });
 export default Jre();
+
 //# sourceMappingURL=1c73f929.js.map
